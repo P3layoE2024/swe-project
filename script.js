@@ -76,7 +76,7 @@ for (const expense of expenses) {
     const amountCell = newRow.insertCell();
     const dateCell = newRow.insertCell();
     const deleteCell = newRow.insertCell();
-    const editCell =newRow.insertCell();
+    //const editCell =newRow.insertCell();
 
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
