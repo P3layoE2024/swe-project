@@ -51,7 +51,7 @@ addBtn.addEventListener('click', function() {
 
         expensesTableBody.removeChild(newRow);
     });
-    /*
+    /* FUNCTIONALITY IN PROGRESS
     editBtn.textContent = 'Edit';
     editBtn.classList.add('edit-btn');
     editBtn.addEventListener('click', function() {
