@@ -93,5 +93,5 @@ for (const expense of expenses) {
     amountCell.textContent = expense.amount;
     dateCell.textContent = expense.date;
     deleteCell.appendChild(deleteBtn);
-    editCell.appendChild(editBtn);
+    //editCell.appendChild(editBtn);
 }
