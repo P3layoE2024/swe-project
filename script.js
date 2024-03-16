@@ -58,6 +58,12 @@ addBtn.addEventListener('click', function() {
     dateCell.textContent = expense.date;
     deleteCell.appendChild(deleteBtn);
 
+    editBtn.textContent = 'Edit';
+    editBtn.classList.add('edit-btn');
+    editBtn.addEventListener('click', function() {
+
+    });
+
 });
 
 for (const expense of expenses) {
