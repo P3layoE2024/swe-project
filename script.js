@@ -36,10 +36,10 @@ addBtn.addEventListener('click', function() {
     const amountCell = newRow.insertCell();
     const dateCell = newRow.insertCell();
     const deleteCell = newRow.insertCell();
-    const editCell = newRow.insertCell();
+    //const editCell = newRow.insertCell();
 
     const deleteBtn = document.createElement('button');
-    const editBtn = document.createElement('button');
+    //const editBtn = document.createElement('button');
 
     deleteBtn.textContent = 'Delete';
     deleteBtn.classList.add('delete-btn');
