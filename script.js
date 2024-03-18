@@ -51,13 +51,13 @@ addBtn.addEventListener('click', function() {
 
         expensesTableBody.removeChild(newRow);
     });
-    /* FUNCTIONALITY IN PROGRESS
+    /* FUNCTIONALITY IN PROGRESS*/
     editBtn.textContent = 'Edit';
     editBtn.classList.add('edit-btn');
     editBtn.addEventListener('click', function() {
         
     });
-    */
+    
     const expense = expenses[expenses.length - 1];
     categoryCell.textContent = expense.category;
     amountCell.textContent = expense.amount;
