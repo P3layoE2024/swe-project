@@ -18,7 +18,7 @@ addBtn.addEventListener('click', function() {
         return;
     }
     if (isNaN(amount) || amount <=0 ) {
-        alert('Please enter a valid amoun')
+        alert('Please enter a valid amount')
         return;
     }
     if(date === '') {
@@ -36,7 +36,6 @@ addBtn.addEventListener('click', function() {
     const amountCell = newRow.insertCell();
     const dateCell = newRow.insertCell();
     const deleteCell = newRow.insertCell();
-    const editCell = newRow.insertCell();
 
     const deleteBtn = document.createElement('button');
     const editBtn = document.createElement('button');
@@ -56,14 +55,16 @@ addBtn.addEventListener('click', function() {
     editBtn.classList.add('edit-btn');
     editBtn.addEventListener('click', function() {
         
+
     });
     
     const expense = expenses[expenses.length - 1];
     categoryCell.textContent = expense.category;
     amountCell.textContent = expense.amount;
     dateCell.textContent = expense.date;
+    // Buttons on same table cell
     deleteCell.appendChild(deleteBtn);
-    editCell.appendChild(editBtn);
+    deleteCell.appendChild(editBtn);
 
 });
 
@@ -76,7 +77,7 @@ for (const expense of expenses) {
     const amountCell = newRow.insertCell();
     const dateCell = newRow.insertCell();
     const deleteCell = newRow.insertCell();
-    //const editCell =newRow.insertCell();
+    // const editCell =newRow.insertCell();
 
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
@@ -89,9 +90,17 @@ for (const expense of expenses) {
 
         expensesTableBody.removeChild(newRow);
     });
+
+    editBtn.textContent = 'Edit';
+    editBtn.classList.add('edit-btn');
+    editBtn.addEventListener('click', function() {
+        
+
+    });
+
     categoryCell.textContent = expense.category;
     amountCell.textContent = expense.amount;
     dateCell.textContent = expense.date;
     deleteCell.appendChild(deleteBtn);
-    //editCell.appendChild(editBtn);
+    deleteCell.appendChild(editBtn);
 }

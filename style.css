@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    /*background-color: lightgrey;*/
     margin: 0;
   }
   
@@ -21,8 +22,8 @@ body {
   }
   
   .input-section input[type="number"], .input-section input[type="date"] {
-    padding: 5px;
-    margin-right: 10px;
+    padding: 10px;
+    margin-right: 5px;
   }
   
   .input-section button {
@@ -34,6 +35,25 @@ body {
     cursor: pointer;
   }
   
+  .search {
+    font-weight: bold;
+    padding: 10px;
+    align-items: right;
+  }
+
+  .search input {
+    padding: 5px; 
+  }
+
+  .search button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
   .expenses-list {
     margin: 20px;
   }
@@ -48,7 +68,7 @@ body {
     padding: 8px;
     text-align: left;
   }
-  
+
   th {
     background-color: #4CAF50;
     color: white;
@@ -59,7 +79,7 @@ body {
   }
   
   .delete-btn {
-    padding: 5px 10px;
+    padding: 8px 10px;
     background-color: #f44336;
     color: white;
     border: none;
@@ -68,7 +88,7 @@ body {
   }
  
   .edit-btn {
-    padding: 5px 10px;
+    padding: 8px 10px;
     background-color: #7BA6B4;
     color: white;
     border: none;
